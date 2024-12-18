@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockStar Band - Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+    <title>The Generics | about</title>
+ </head>
+ <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    header { background-color: #777; color: white; padding: 1em; }
+    nav a { margin: 0 10px; color: blue; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    footer { margin-top: 20px; font-size: 0.8em; color: gray; }
+    form { display: inline-block; text-align: left; margin-top: 20px; }
+  </style>
+  <script>
+    function showAlert(event) {
+      event.preventDefault();
+      alert("Thank you for reaching out!");
+    }
+  </script>
+</head> 
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="contact_us.html">Contact us</a> </li>
+            </ul>
+        </nav>
+
+        <h1 class="band-name band-name-large">The Generics</h1>
+    </header>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <form onsubmit>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 RockStar Band. All rights reserved.</p>
+  </footer>
+</body>
+</html>
